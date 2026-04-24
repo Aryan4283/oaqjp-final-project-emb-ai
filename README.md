@@ -9,11 +9,11 @@ This project was developed as part of the IBM Skills Network course.
 ---
 
 ## ⚙️ Tech Stack
-- Python
-- Flask
-- IBM Watson NLP API
-- Requests
-- PyLint
+- **Python**
+- **Flask**
+- **IBM Watson NLP API**
+- **Requests**
+- **PyLint**
 
 ---
 
@@ -27,41 +27,52 @@ This project was developed as part of the IBM Skills Network course.
 ---
 
 ## 🧠 How It Works
-1. User enters text in the web interface  
-2. The Flask server sends a request to IBM Watson NLP API  
-3. API returns emotion scores  
-4. The app extracts and displays:
+1. User enters text in the web interface.
+2. The Flask server sends a request to the IBM Watson NLP API.
+3. The API returns emotion scores.
+4. The app extracts and displays scores for:
    - Anger
    - Disgust
    - Fear
    - Joy
-   - Sadness  
-5. The dominant emotion is calculated and shown  
+   - Sadness
+5. The dominant emotion is calculated and shown to the user.
 
 ---
 
 ## ▶️ Run Locally
 
-pip install flask requests  
-python3 server.py  
+1. Install the required dependencies:
+```bash
+pip install flask requests
+```
 
-Then open:  
-http://localhost:5000
+2. Run the server:
+```bash
+python3 server.py
+```
+
+3. Open your browser and navigate to:  
+`http://localhost:5000`
 
 ---
 
 ## ⚠️ Error Handling
-If no input is provided:  
-Invalid text! Please try again!
+If no input is provided or the text is invalid, the app will return the following message:  
+> `Invalid text! Please try again!`
 
 ---
 
-## 📁 Project Structure
-EmotionDetection/  
-    emotion_detection.py  
-    __init__.py  
-server.py  
-test_emotion_detection.py  
+## 📂 Project Structure
+
+```text
+.
+├── EmotionDetection/
+│   ├── emotion_detection.py
+│   └── __init__.py
+├── server.py
+└── test_emotion_detection.py
+```
 
 ---
 
